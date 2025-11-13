@@ -1,7 +1,7 @@
 # Simple Steps to Deploy WavePoser to andrewzhou.org/wave-poser
 
 ## ✅ Step 1: WavePoser is Already Configured
-The `basePath: '/wave-poser'` is already set in `next.config.js`. Just commit and push this change to trigger a new deployment.
+WavePoser now deploys at the root of its domain (`https://wave-poser.vercel.app/`). Just commit and push any changes to trigger a new deployment.
 
 ## 📝 Step 2: Add Rewrite to Your Main Site
 
@@ -15,7 +15,7 @@ Create or update `vercel.json` in the root of your main site repo:
   "rewrites": [
     {
       "source": "/wave-poser/:path*",
-      "destination": "https://wave-poser-90ywfw9bf-andrewyzhous-projects.vercel.app/wave-poser/:path*"
+      "destination": "https://wave-poser.vercel.app/:path*"
     }
   ]
 }
@@ -30,7 +30,7 @@ module.exports = {
     return [
       {
         source: '/wave-poser/:path*',
-        destination: 'https://wave-poser-90ywfw9bf-andrewyzhous-projects.vercel.app/wave-poser/:path*',
+        destination: 'https://wave-poser.vercel.app/:path*',
       },
     ]
   },

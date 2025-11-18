@@ -28,6 +28,7 @@ Thumbs.db
 
 # Sensitive / personal documents
 TWITCH_APPLICATION_RESPONSE.md
+DEPLOYMENT_GUIDE.md
 
 # Logs
 *.log

@@ -26,6 +26,9 @@ build/
 .DS_Store
 Thumbs.db
 
+# Sensitive / personal documents
+TWITCH_APPLICATION_RESPONSE.md
+
 # Logs
 *.log
 
